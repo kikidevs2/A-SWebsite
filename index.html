@@ -83,7 +83,7 @@
             <li>Free estimates in person or via digital blueprints</li>
             <li>Surface preparation, drywall repair, and substrate repair</li>
             <li>Digital blueprint estimating and on-site assessments</li>
-            <li>Licensed, insured, and safety-first workmanship</li>
+            <li>Licensed and insured through Acisure West Region, with safety-first workmanship</li>
             <li>OSHA safety standards compliance on every project</li>
             <li>More than 40 years serving the region</li>
           </ul>
@@ -119,7 +119,7 @@
           </article>
           <article>
             <h3>Licensed &amp; Insured</h3>
-            <p>We provide professional painting backed by full licensing, insurance, and solid workmanship.</p>
+            <p>We provide professional painting backed by full licensing and insurance through Acisure West Region, plus solid workmanship.</p>
           </article>
           <article>
             <h3>Wood Siding & Deck Coating Expertise</h3>
@@ -266,13 +266,17 @@
           <h2>Get in Touch</h2>
           <p>Ready to start your project? Reach out for a free estimate and fast scheduling.</p>
         </div>
-        <form>
+        <form action="/api/contact" method="POST">
+          <input type="hidden" name="_subject" value="Website contact request" />
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required />
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" placeholder="Your phone number" />
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project"></textarea>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+          <input type="text" name="honey" style="position:absolute;left:-9999px;top:auto;opacity:0;" autocomplete="off" tabindex="-1" />
           <button type="submit" class="btn-primary">Send Message</button>
         </form>
       </div>
@@ -350,5 +354,6 @@
         }
       });
     </script>
+
 </body>
 </html>
