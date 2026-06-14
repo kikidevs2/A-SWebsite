@@ -266,8 +266,9 @@
           <h2>Get in Touch</h2>
           <p>Ready to start your project? Reach out for a free estimate and fast scheduling.</p>
         </div>
-        <form action="/api/contact" method="POST">
-          <input type="hidden" name="_subject" value="Website contact request" />
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="2f643cbf-80f5-464b-a976-0101b0004b15" />
+          <input type="hidden" name="subject" value="New Estimate Request - A&S Painting" />
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required />
           <label for="email">Email</label>
@@ -276,7 +277,6 @@
           <input type="text" id="phone" name="phone" placeholder="Your phone number" />
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" placeholder="Tell us about your project" required></textarea>
-          <input type="text" name="honey" style="position:absolute;left:-9999px;top:auto;opacity:0;" autocomplete="off" tabindex="-1" />
           <button type="submit" class="btn-primary">Send Message</button>
         </form>
       </div>
