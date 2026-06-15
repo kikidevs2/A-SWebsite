@@ -308,16 +308,20 @@
         </div>
         
   <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="50977957-250f-4d4c-a49e-91fc58164a94">
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <textarea name="message" required></textarea>
-    <button type="submit">Submit Form</button>
-</form>
-
-
-      </div>
-    </section>
+          <input type="hidden" name="access_key" value="50977957-250f-4d4c-a49e-91fc58164a94" />
+          <input type="hidden" name="subject" value="New Estimate Request - A&S Painting" />
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" placeholder="Your phone number" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+</div>
+   </section>
   </main>
 
   <footer class="site-footer">
