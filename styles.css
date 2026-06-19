@@ -34,7 +34,7 @@ html {
 #projects,
 #contact,
 #partners {
-  scroll-margin-top: 1rem;
+  scroll-margin-top: 70px;
 }
 
 img {
@@ -58,6 +58,7 @@ img {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(18px);
+  overflow: visible;
 }
 
 .top-bar {
@@ -118,7 +119,9 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 0;
+  min-height: 60px;
+  overflow: visible;
 }
 
 .brand {
@@ -131,10 +134,12 @@ img {
 }
 
 .logo {
-  width: 65px;
-  height: auto;
+  width: 130px;
+  height: 130px;
   border-radius: 8px;
   object-fit: contain;
+  position: relative;
+  z-index: 11;
 }
 
 .site-nav {
@@ -606,4 +611,99 @@ button {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* ========================================================================== */
+/* Free Estimate Popup */
+/* ========================================================================== */
+
+.estimate-popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.estimate-popup.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.estimate-popup-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 2.5rem 2rem;
+  max-width: 440px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+  transform: translateY(20px);
+  transition: transform 0.35s ease;
+}
+
+.estimate-popup.visible .estimate-popup-box {
+  transform: translateY(0);
+}
+
+.estimate-popup-badge {
+  display: inline-block;
+  background: var(--secondary);
+  color: #111;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.estimate-popup-box h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.7rem;
+  color: var(--text);
+}
+
+.estimate-popup-box h2 span {
+  color: var(--secondary);
+}
+
+.estimate-popup-box p {
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.estimate-popup-sub {
+  margin-top: 1rem !important;
+  font-size: 0.85rem !important;
+}
+
+.estimate-popup-sub a {
+  color: var(--secondary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.estimate-popup-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  line-height: 1;
+}
+
+.estimate-popup-close:hover {
+  color: var(--text);
 }
