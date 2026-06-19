@@ -10,66 +10,55 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
-<body>
+<body id="top">
   <div class="top-bar">
     <div class="container top-bar-inner">
-      <span>Serving the Bay Area, Monterey Bay Peninsula, and Central Valley.</span>
+      <span>Over 40+ Years of Experience &nbsp;|&nbsp; Residential &amp; Commercial Painting</span>
       <a href="tel:4086125641">Call (408) 612-5641</a>
     </div>
   </div>
   <header class="site-header">
     <div class="container header-top">
-      <a href="#home" class="brand">
+      <a href="#top" class="brand">
         <img src="Logo/mobilelogo.png" alt="A&S Logo" class="logo" />
         <span>A&amp;S Painting and Plastering Inc</span>
       </a>
       <nav class="site-nav">
-        <a href="#home">Home</a>
+        <a href="#top">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#why">Why A&amp;S</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+      <a href="#contact" class="btn-primary header-cta">Request a Free Estimate</a>
     </div>
   </header>
 
   <main>
     <section id="home" class="hero-section">
-      <div class="hero-media" aria-hidden="false">
-        <div class="swiper hero-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="Gallery/aprproved by Tony/andalusia-exterior-3-1.jpg" alt="Exterior building painted white and blue" loading="eager" />
-            </div>
-            <div class="swiper-slide">
-              <img src="Gallery/aprproved by Tony/IMG_0491.jpg" alt="Interior painting project" loading="lazy" />
-            </div>
-            <div class="swiper-slide">
-              <img src="Gallery/aprproved by Tony/IMG_0493.jpg" alt="Exterior painting project" loading="lazy" />
-            </div>
-            <div class="swiper-slide">
-              <img src="Gallery/aprproved by Tony/IMG_0497.jpg" alt="Renovation detail" loading="lazy" />
-            </div>
-            <div class="swiper-slide">
-              <img src="Gallery/aprproved by Tony/IMG_0506.jpg" alt="Detail painting work" loading="lazy" />
-            </div>
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Gallery/aprproved by Tony/andalusia-exterior-3-1.jpg" alt="Exterior building painted white and blue" loading="eager" />
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <img src="Gallery/aprproved by Tony/IMG_0491.jpg" alt="Interior painting project" loading="lazy" />
+          </div>
+          <div class="swiper-slide">
+            <img src="Gallery/aprproved by Tony/IMG_0493.jpg" alt="Exterior painting project" loading="lazy" />
+          </div>
+          <div class="swiper-slide">
+            <img src="Gallery/aprproved by Tony/IMG_0497.jpg" alt="Renovation detail" loading="lazy" />
+          </div>
+          <div class="swiper-slide">
+            <img src="Gallery/aprproved by Tony/IMG_0506.jpg" alt="Detail painting work" loading="lazy" />
+          </div>
         </div>
-        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="container hero-content">
-        <h1>A&amp;S Painting and Plastering Inc <span class="hero-tagline">Trusted Bay Area painting specialists Residential &amp; Commercial</span></h1>
-        <div class="hero-actions">
-          <a href="#contact" class="btn-primary">Request a Free Estimate</a>
-          <a href="#projects" class="btn-tertiary">View Projects</a>
-          <a href="tel:4086125641" class="btn-secondary">Call (408) 612-5641</a>
-        </div>
-        <div class="hero-badges">
-          <span class="badge badge-white">In-person or digital blueprint estimates</span>
-          <span class="badge badge-gold">Residential, commercial, and surface prep</span>
-        </div>
+      <div class="hero-name-overlay">
+        <h1>A&amp;S Painting and Plastering Inc</h1>
       </div>
     </section>
 
@@ -77,7 +66,7 @@
       <div class="container section-grid">
         <div>
           <h2>About</h2>
-          <p>A&amp;S Painting and Plastering Inc provides full-service painting (including new paint projects), wall coverings, waterproofing and roof prep, and surface preparation for residential and commercial projects. We offer free estimates in person or via digital blueprints and work with builders, contractors, HOA and property managers across the Bay Area, Monterey Bay Peninsula, and Central Valley. Our crews follow OSHA safety standards on every job.</p>
+          <p>A&amp;S Painting and Plastering Inc provides full-service painting wall coverings, waterproofing and roof prep, and surface preparation for residential and commercial projects. We offer free estimates in person or via digital blueprints and work with builders, contractors, HOA and property managers across the Bay Area, Monterey Bay Peninsula, and Central Valley. Our crews follow OSHA safety standards on every job.</p>
           <ul>
             <li>Full-service painting and new paint projects</li>
             <li>Wall covering installation</li>
@@ -252,13 +241,13 @@
       <div class="container contact-grid">
         <div class="contact-info-card">
           <h2>Get in Touch</h2>
-          <p>Ready to start your project? Reach out for a free estimate and fast scheduling.</p>
-          <p><strong>General Inquiry:</strong> Submit a form or reach out directly below.</p>
+          <p class="contact-intro-black">Ready to start your project? Fill out the form or contact us directly below.</p>
+          <p class="contact-label-black"><strong>General Inquiry:</strong></p>
           <div class="contact-detail-list">
             <p><span>Company Email:</span> <a href="mailto:sales@as-pp.com">sales@as-pp.com</a></p>
             <p><span>Company Phone:</span> <a href="tel:4086125641">(408) 612-5641</a></p>
           </div>
-          <p><strong>Reach Out to Our Representatives:</strong></p>
+          <p class="contact-label-black"><strong>Reach Out to Our Representatives:</strong></p>
           <div class="contact-reps-row">
             <div class="contact-reps-list">
               <div class="contact-rep">
@@ -278,7 +267,7 @@
           </div>
         </div>
         <form action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="4e13ce97-781f-4a5f-a440-eedad3c0262f" />
+          <input type="hidden" name="access_key" value="2f643cbf-80f5-464b-a976-0101b0004b15" />
           <input type="hidden" name="subject" value="New Estimate Request - A&S Painting and Plastering Inc" />
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required />
