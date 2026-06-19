@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Qy3uIT-yohltC-dh2U6XD";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A&amp;S Painting and Plastering Inc</title>
@@ -107,7 +104,7 @@
             <ul>
               <li>Waterproofing and roof prep</li>
               <li>Deck coatings &amp; epoxy finishes (prep and coating)</li>
-              <li>Wood siding prep</li>
+              <li>Wood siding restoration</li>
             </ul>
           </div>
 
@@ -148,7 +145,7 @@
           </article>
           <article>
             <h3>Wood Siding & Deck Coating Expertise</h3>
-            <p>Specialized in wood siding prep and durable deck coating epoxy systems for lasting exterior performance.</p>
+            <p>Specialized in wood siding restoration and durable deck coating epoxy systems for lasting exterior performance.</p>
           </article>
           <article>
             <h3>Trusted Process</h3>
@@ -163,8 +160,8 @@
             <p>We provide a clear project timeline so you know what to expect at every stage of the job.</p>
           </article>
           <article>
-            <h3>Bay Area &amp; Central Valley</h3>
-            <p>Proudly serving residential and commercial clients across the Bay Area, Monterey Bay Peninsula, and Central Valley.</p>
+            <h3>Industry Memberships</h3>
+            <p>Valued member of BIA | Bay Area, NAHB, and CBIA.</p>
           </article>
         </div>
       </div>
@@ -281,49 +278,19 @@
     <img class="lightbox-image" id="lightboxImage" alt="Enlarged photo" />
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.hero-swiper', {
-      loop: true,
-      autoplay: { delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: false },
-      pagination: { el: '.swiper-pagination', clickable: true },
-      keyboard: { enabled: true },
-      preloadImages: true,
-      effect: 'fade',
-      fadeEffect: { crossFade: true }
-    });
 
-    const lightboxOverlay = document.getElementById('lightboxOverlay');
-    const lightboxImage = document.getElementById('lightboxImage');
-    const lightboxClose = document.getElementById('lightboxClose');
-    const imageSelectors = '.gallery-grid img, .hero-swiper .swiper-slide img';
-    document.querySelectorAll(imageSelectors).forEach(img => {
-      img.addEventListener('click', () => {
-        lightboxImage.src = img.src;
-        lightboxImage.alt = img.alt || 'Enlarged photo';
-        lightboxOverlay.classList.add('active');
-        lightboxOverlay.setAttribute('aria-hidden', 'false');
-      });
-    });
+  <div id="estimate-popup" class="estimate-popup" role="dialog" aria-modal="true" aria-labelledby="estimate-popup-title">
+    <div class="estimate-popup-box">
+      <button id="estimate-popup-close" class="estimate-popup-close" aria-label="Close">&times;</button>
+      <div class="estimate-popup-badge">LIMITED TIME</div>
+      <h2 id="estimate-popup-title">Get Your <span>Free Estimate</span> Today!</h2>
+      <p>Over 40 years of trusted painting &amp; plastering across the Bay Area. No obligations — just honest pricing.</p>
+      <a href="#contact" class="btn-primary" id="estimate-popup-cta">Request Free Estimate</a>
+      <p class="estimate-popup-sub">Or call us: <a href="tel:4086125641">(408) 612-5641</a></p>
+    </div>
+  </div>
 
-    const closeLightbox = () => {
-      lightboxOverlay.classList.remove('active');
-      lightboxOverlay.setAttribute('aria-hidden', 'true');
-      lightboxImage.src = '';
-    };
-
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightboxOverlay.addEventListener('click', event => {
-      if (event.target === lightboxOverlay) {
-        closeLightbox();
-      }
-    });
-
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && lightboxOverlay.classList.contains('active')) {
-        closeLightbox();
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
